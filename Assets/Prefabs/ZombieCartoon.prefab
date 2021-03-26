@@ -962,6 +962,7 @@ GameObject:
   - component: {fileID: 3541136479663229809}
   - component: {fileID: 3541136479663531859}
   - component: {fileID: 3541136479985248680}
+  - component: {fileID: 446183799000797213}
   - component: {fileID: 3541136479985248681}
   - component: {fileID: 6221062708228109735}
   - component: {fileID: 6150977963615569815}
@@ -1041,6 +1042,7 @@ MonoBehaviour:
   BlockAnim: {fileID: 7400000, guid: 3d70d4e1320891e4ba93a693d355fa32, type: 3}
   IdleSpecialAnim: {fileID: 7400000, guid: 3ecba64dd011a0e4eaeedddb3e5157ab, type: 3}
   AppairAnim: {fileID: 7400000, guid: d9a6b35aa1e1f804a8be2e0d4b721ac5, type: 3}
+  enemyScript: {fileID: 0}
 --- !u!54 &3541136479985248680
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1057,6 +1059,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &446183799000797213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3541136479657513685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19085da954e5043409887696260b6f3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &3541136479985248681
 BoxCollider:
   m_ObjectHideFlags: 0

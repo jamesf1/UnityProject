@@ -8,14 +8,16 @@ public class EnemyScript : MonoBehaviour
 		IDLE, WALK, RUN, ATTACK
 	}
 	public float walkSpeed = 5f;
-	public float runSpeed = 5f;
+	public float runSpeed = 10f;
 	public float attackDistance = 2f;
+	public GameObject target;
 	Vector3 move;
 	
 	private float wanderTimer = 50f;
 	private float wanderTime = 50f;
 	private float wanderDist; 
 
+	private float chaseDistance = 40f;
 	
 	public State state;
 	public UnityEngine.AI.NavMeshAgent navAgent;
@@ -31,7 +33,10 @@ public class EnemyScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Wander();
+		if(state == State.WALK)
+			Wander();
+		else if(state == State.RUN) 
+			Chase();
 
     }
 	
@@ -43,8 +48,18 @@ public class EnemyScript : MonoBehaviour
 			move = getRandomDest();
 		}
 		navAgent.SetDestination(move);
+		
+		if(Vector3.Distance(transform.position, target.transform.position) <= chaseDistance) {
+			state = State.RUN;
+		}
 
-
+		
+		
+	}
+	void Chase() {
+		navAgent.isStopped= false;
+		navAgent.speed = runSpeed;
+		navAgent.SetDestination(target.transform.position);
 		
 		
 	}

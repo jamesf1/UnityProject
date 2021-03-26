@@ -6,7 +6,7 @@ using UnityEngine;
 //Note: Developed with knowledge from this tutorial: https://www.youtube.com/watch?v=Sqb-Ue7wpsI&t=3432s
 public class PMovement : MonoBehaviour
 {
-	private float speed = 7f; 
+	public float speed = 7f; 
     private Vector3 moveDirection = Vector3.zero;
 	private float jumpHeight = 10f;
 	private float vspeed = 0f;
