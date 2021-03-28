@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 //Note: Developed with knowledge from this tutorial: https://www.youtube.com/watch?v=Sqb-Ue7wpsI&t=3432s
 public class PMovement : MonoBehaviour
 {
-	public float speed = 7f; 
+	public float speed ; 
     private Vector3 moveDirection = Vector3.zero;
 	private float jumpHeight = 10f;
 	private float vspeed = 0f;
@@ -31,6 +32,8 @@ public class PMovement : MonoBehaviour
 		 
 		if( controller.isGrounded && Input.GetKeyDown(KeyCode.Space) ) 
 			Jump();
+		if(Input.GetKeyDown(KeyCode.Return))
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 		vspeed -= gravity * Time.deltaTime;
 		moveDirection.y = vspeed * Time.deltaTime;
 		

@@ -40,6 +40,8 @@ public class Animations : MonoBehaviour {
 			TargetChar.GetComponent<Animation>().Play("walkzombie");
 		else if(state == EnemyScript.State.RUN)
 			TargetChar.GetComponent<Animation>().Play("runzombie");
+		else if(state == EnemyScript.State.DEAD)
+			TargetChar.GetComponent<Animation>().Play(DieAnim.name);
 		
 	}
 }

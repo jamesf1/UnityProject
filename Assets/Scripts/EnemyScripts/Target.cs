@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Target : MonoBehaviour
 {
+	public float health = 10;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,8 +17,14 @@ public class Target : MonoBehaviour
         
     }
 	
-	void TakeDamage(float damage) {
+	public void TakeDamage(float damage) {
+		Debug.Log(health);
+		Debug.Log(damage);
+		health -= damage;
+		Debug.Log(health);
 		
+		if(health <=0)
+			GetComponent<EnemyScript>().Die();
 	}
 	
 }

@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
-	public float dam = 5f;
+
 	public float shootTimer;
 	public float shootTime = 1f;
 	public float range = 20f;
-	public float damageFalloff;
-	public float damage;
+	public float damage = 20f;
 	public Camera cam;
 	public GameObject muzzleFlash;
 	
@@ -40,9 +39,8 @@ public class Gun : MonoBehaviour
 			
 			Target target = hit.transform.GetComponent<Target>();
 			if(target != null) {
-				float dist = Vector3.Distance(transform.position, hit.transform.position);
-				float damageDealt = (range / (dist * damageFalloff)) * damage;
-				Debug.Log(damageDealt);
+				float damageDealt = damage;
+				target.TakeDamage(damageDealt);
 			}
 				
 		}

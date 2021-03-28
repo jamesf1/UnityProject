@@ -5,10 +5,12 @@ using UnityEngine;
 public class EnemyScript : MonoBehaviour
 {
 	public enum State {
-		IDLE, WALK, RUN, ATTACK
+		IDLE, WALK, RUN, ATTACK, DEAD
 	}
 	public float walkSpeed = 5f;
 	public float runSpeed = 10f;
+	public float angularSpeed = 700;
+	public float acc;
 	public float attackDistance = 2f;
 	public GameObject target;
 	Vector3 move;
@@ -28,6 +30,17 @@ public class EnemyScript : MonoBehaviour
     {
         state = State.WALK;
 		wanderDist = wanderTime * walkSpeed;
+		
+		//Randomize enemy movement to create unpredictable behavior
+		float moveMod = Random.Range(.9f,1.4f);
+		walkSpeed *= moveMod;
+		runSpeed *= moveMod;
+		navAgent.acceleration = moveMod * acc;
+		
+		float angularMod = Random.Range(.9f, 1.5f);
+		navAgent.angularSpeed = angularSpeed * angularMod;
+		
+		
     }
 
     // Update is called once per frame
@@ -51,17 +64,29 @@ public class EnemyScript : MonoBehaviour
 		
 		if(Vector3.Distance(transform.position, target.transform.position) <= chaseDistance) {
 			state = State.RUN;
+			AlertFriends();
 		}
-
-		
-		
 	}
 	void Chase() {
-		navAgent.isStopped= false;
-		navAgent.speed = runSpeed;
 		navAgent.SetDestination(target.transform.position);
-		
-		
+	}
+	
+	void Alert() {
+		if(state != State.RUN) {
+			navAgent.isStopped= false;
+			navAgent.speed = runSpeed;
+			state = State.RUN;
+			AlertFriends();
+		}
+	}
+	
+	void AlertFriends() {
+		GameObject[] friends = GameObject.FindGameObjectsWithTag("Enemy");
+		foreach (GameObject friend in friends) {
+			float friendDist = Vector3.Distance(friend.transform.position, transform.position);
+			if(friendDist < chaseDistance)
+				friend.GetComponent<EnemyScript>().Alert();
+		}
 	}
 	
 	Vector3 getRandomDest() {
@@ -75,6 +100,12 @@ public class EnemyScript : MonoBehaviour
            
             return navHit.position;
 	}
+	
+	public void Die() {
+		navAgent.isStopped= true;
+		state = State.DEAD;
+	}
+	
 	
 	
 
