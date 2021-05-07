@@ -17,6 +17,7 @@ public class EnemyScript : MonoBehaviour
 	
 	private float wanderTimer = 50f;
 	private float wanderTime = 50f;
+	private float dieTimer = 200f;
 	private float wanderDist; 
 
 	private float chaseDistance = 40f;
@@ -50,6 +51,11 @@ public class EnemyScript : MonoBehaviour
 			Wander();
 		else if(state == State.RUN) 
 			Chase();
+		else if(state == State.DEAD) {
+			dieTimer--;
+			if(dieTimer < 0)
+				Destroy(this.gameObject);
+		}
 
     }
 	

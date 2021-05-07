@@ -14,7 +14,7 @@ public class PMovement : MonoBehaviour
 	private float invulnTime= 0f; //player is invulnerable shortly after a hit
 	private float vspeed = 0f;
 	private float gravity = 15f;
-	private int health = 2;
+	private int health = 4;
 	
 	 
     // Start is called before the first frame update

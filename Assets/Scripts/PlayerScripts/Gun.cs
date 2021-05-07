@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
-
+	public AudioSource audioSrc;
+	public AudioClip gunSnd;
 	public float shootTimer;
 	public float shootTime = 1f;
-	public float range = 20f;
+	private float maxSpread = 7f;
+	private float range = 40f;
 	public float damage = 20f;
 	public Camera cam;
 	public GameObject muzzleFlash;
@@ -34,15 +36,21 @@ public class Gun : MonoBehaviour
     }
 	void Shoot() {
 		RaycastHit hit;
-
-		if(Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, range)) {
-			
-			Target target = hit.transform.GetComponent<Target>();
-			if(target != null) {
-				float damageDealt = damage;
-				target.TakeDamage(damageDealt);
-			}
+		audioSrc.PlayOneShot(gunSnd);
+		for(int i = 0; i < 50; i++) {
+			Debug.Log(cam.transform.forward);
+			Debug.Log(Quaternion.Euler(Random.Range(-maxSpread,maxSpread), Random.Range(-maxSpread,maxSpread), Random.Range(-maxSpread,maxSpread)));
+			Vector3 dir = Quaternion.Euler(Random.Range(-maxSpread,maxSpread), Random.Range(-maxSpread,maxSpread), Random.Range(-maxSpread,maxSpread)) * cam.transform.forward;
+			Debug.Log(dir);
+			if(Physics.Raycast(cam.transform.position, dir, out hit, range)) {
 				
+				Target target = hit.transform.GetComponent<Target>();
+				if(target != null) {
+					float damageDealt = damage;
+					target.TakeDamage(damageDealt);
+				}
+					
+			}
 		}
 		flashTimer = 0f;
 		shootTimer = 0f;
