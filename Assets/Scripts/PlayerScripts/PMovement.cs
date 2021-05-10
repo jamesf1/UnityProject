@@ -24,7 +24,7 @@ public class PMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+          Cursor.visible = false;
     }
 
     // Update is called once per frame
@@ -77,7 +77,10 @@ public class PMovement : MonoBehaviour
 		health--;
 		vspeed = damageHeight;
 		if(health <= 0)
-			SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+			if(finishSndPlayed)
+				Application.Quit();
+			else
+				SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 	}
 	void Jump() {
 
