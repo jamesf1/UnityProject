@@ -8,6 +8,10 @@ using UnityEngine.SceneManagement;
 public class PMovement : MonoBehaviour
 {
 	public float speed ; 
+	public AudioClip ouchSnd;
+	public AudioClip finishSnd;
+	public AudioClip finishSnd2;
+	public AudioSource audioSrc;
     private Vector3 moveDirection = Vector3.zero;
 	private float jumpHeight = 10f;
 	private float damageHeight = 20f;
@@ -15,7 +19,7 @@ public class PMovement : MonoBehaviour
 	private float vspeed = 0f;
 	private float gravity = 15f;
 	private int health = 4;
-	
+	private bool finishSndPlayed = false;
 	 
     // Start is called before the first frame update
     void Start()
@@ -46,7 +50,6 @@ public class PMovement : MonoBehaviour
     }
 	
 	void OnCollisionEnter(Collision collision) {
-		Debug.Log("Hello");
 		GameObject obj = collision.gameObject;
 		if(obj.tag == "nextScene")
 			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -55,11 +58,21 @@ public class PMovement : MonoBehaviour
 	}
 	
 	private void OnTriggerEnter(Collider other) {
-		if(invulnTime <= 0f)
+		if(other.gameObject.tag == "Enemy" && invulnTime <= 0f)
 			takeDamage();
+		else if(other.gameObject.tag == "Finish" && finishSndPlayed == false) {
+			GameObject[] spawners = GameObject.FindGameObjectsWithTag("spawn");
+			foreach(GameObject spawner in spawners) {
+				spawner.GetComponent<SpawnerScript>().enabled = true;
+			}
+			finishSndPlayed = true;
+			audioSrc.PlayOneShot(finishSnd);
+			audioSrc.PlayOneShot(finishSnd2);
+		}		
 	}
 	
 	void takeDamage() {
+		audioSrc.PlayOneShot(ouchSnd);
 		invulnTime = 10f;
 		health--;
 		vspeed = damageHeight;

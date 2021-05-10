@@ -38,10 +38,7 @@ public class Gun : MonoBehaviour
 		RaycastHit hit;
 		audioSrc.PlayOneShot(gunSnd);
 		for(int i = 0; i < 50; i++) {
-			Debug.Log(cam.transform.forward);
-			Debug.Log(Quaternion.Euler(Random.Range(-maxSpread,maxSpread), Random.Range(-maxSpread,maxSpread), Random.Range(-maxSpread,maxSpread)));
 			Vector3 dir = Quaternion.Euler(Random.Range(-maxSpread,maxSpread), Random.Range(-maxSpread,maxSpread), Random.Range(-maxSpread,maxSpread)) * cam.transform.forward;
-			Debug.Log(dir);
 			if(Physics.Raycast(cam.transform.position, dir, out hit, range)) {
 				
 				Target target = hit.transform.GetComponent<Target>();

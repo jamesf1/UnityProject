@@ -18,10 +18,7 @@ public class Target : MonoBehaviour
     }
 	
 	public void TakeDamage(float damage) {
-		Debug.Log(health);
-		Debug.Log(damage);
 		health -= damage;
-		Debug.Log(health);
 		
 		if(health <=0)
 			GetComponent<EnemyScript>().Die();

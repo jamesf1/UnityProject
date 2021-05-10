@@ -144,7 +144,6 @@ MonoBehaviour:
   angularSpeed: 931.89
   acc: 19.3
   attackDistance: 2
-  target: {fileID: 1032260140}
   state: 0
   navAgent: {fileID: 27517019}
 --- !u!195 &27517019 stripped
@@ -173,7 +172,7 @@ PrefabInstance:
     - target: {fileID: 3541136479657807541, guid: 2e5e068b4c53a3c4c8a8c17a79d735bb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 3541136479657807541, guid: 2e5e068b4c53a3c4c8a8c17a79d735bb,
         type: 3}
@@ -636,7 +635,6 @@ MonoBehaviour:
   angularSpeed: 931.89
   acc: 19.3
   attackDistance: 2
-  target: {fileID: 1032260140}
   state: 0
   navAgent: {fileID: 155848165}
 --- !u!195 &155848165 stripped
@@ -665,7 +663,7 @@ PrefabInstance:
     - target: {fileID: 3541136479657807541, guid: 2e5e068b4c53a3c4c8a8c17a79d735bb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 27
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 3541136479657807541, guid: 2e5e068b4c53a3c4c8a8c17a79d735bb,
         type: 3}
@@ -768,7 +766,6 @@ MonoBehaviour:
   angularSpeed: 931.89
   acc: 19.3
   attackDistance: 2
-  target: {fileID: 1032260140}
   state: 0
   navAgent: {fileID: 213273343}
 --- !u!195 &213273343 stripped
@@ -954,7 +951,7 @@ PrefabInstance:
     - target: {fileID: 3541136479657807541, guid: 2e5e068b4c53a3c4c8a8c17a79d735bb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 30
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 3541136479657807541, guid: 2e5e068b4c53a3c4c8a8c17a79d735bb,
         type: 3}
@@ -1257,7 +1254,6 @@ MonoBehaviour:
   angularSpeed: 931.89
   acc: 19.3
   attackDistance: 2
-  target: {fileID: 1032260140}
   state: 0
   navAgent: {fileID: 397725483}
 --- !u!195 &397725483 stripped
@@ -1346,7 +1342,6 @@ MonoBehaviour:
   angularSpeed: 931.89
   acc: 19.3
   attackDistance: 2
-  target: {fileID: 1032260140}
   state: 0
   navAgent: {fileID: 500888120}
 --- !u!195 &500888120 stripped
@@ -1375,7 +1370,7 @@ PrefabInstance:
     - target: {fileID: 3541136479657807541, guid: 2e5e068b4c53a3c4c8a8c17a79d735bb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 28
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 3541136479657807541, guid: 2e5e068b4c53a3c4c8a8c17a79d735bb,
         type: 3}
@@ -1583,7 +1578,7 @@ PrefabInstance:
     - target: {fileID: 3541136479657807541, guid: 2e5e068b4c53a3c4c8a8c17a79d735bb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 3541136479657807541, guid: 2e5e068b4c53a3c4c8a8c17a79d735bb,
         type: 3}
@@ -1689,7 +1684,7 @@ PrefabInstance:
     - target: {fileID: 3541136479657807541, guid: 2e5e068b4c53a3c4c8a8c17a79d735bb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 3541136479657807541, guid: 2e5e068b4c53a3c4c8a8c17a79d735bb,
         type: 3}
@@ -1789,7 +1784,7 @@ PrefabInstance:
     - target: {fileID: 3541136479657807541, guid: 2e5e068b4c53a3c4c8a8c17a79d735bb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 32
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 3541136479657807541, guid: 2e5e068b4c53a3c4c8a8c17a79d735bb,
         type: 3}
@@ -1955,7 +1950,7 @@ PrefabInstance:
     - target: {fileID: 3541136479657807541, guid: 2e5e068b4c53a3c4c8a8c17a79d735bb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 3541136479657807541, guid: 2e5e068b4c53a3c4c8a8c17a79d735bb,
         type: 3}
@@ -2058,7 +2053,6 @@ MonoBehaviour:
   angularSpeed: 931.89
   acc: 19.3
   attackDistance: 2
-  target: {fileID: 1032260140}
   state: 0
   navAgent: {fileID: 812907144}
 --- !u!195 &812907144 stripped
@@ -2090,7 +2084,6 @@ MonoBehaviour:
   angularSpeed: 931.89
   acc: 19.3
   attackDistance: 2
-  target: {fileID: 1032260140}
   state: 0
   navAgent: {fileID: 813993871}
 --- !u!195 &813993871 stripped
@@ -2122,7 +2115,6 @@ MonoBehaviour:
   angularSpeed: 931.89
   acc: 19.3
   attackDistance: 2
-  target: {fileID: 1032260140}
   state: 0
   navAgent: {fileID: 890547171}
 --- !u!195 &890547171 stripped
@@ -2154,7 +2146,6 @@ MonoBehaviour:
   angularSpeed: 931.89
   acc: 19.3
   attackDistance: 2
-  target: {fileID: 1032260140}
   state: 0
   navAgent: {fileID: 912467439}
 --- !u!195 &912467439 stripped
@@ -2183,7 +2174,7 @@ PrefabInstance:
     - target: {fileID: 3541136479657807541, guid: 2e5e068b4c53a3c4c8a8c17a79d735bb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 31
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3541136479657807541, guid: 2e5e068b4c53a3c4c8a8c17a79d735bb,
         type: 3}
@@ -2333,7 +2324,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1345542460}
   m_Father: {fileID: 1340702709}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2360,7 +2352,6 @@ MonoBehaviour:
   angularSpeed: 931.89
   acc: 19.3
   attackDistance: 2
-  target: {fileID: 1032260140}
   state: 0
   navAgent: {fileID: 1028794489}
 --- !u!195 &1028794489 stripped
@@ -2385,7 +2376,7 @@ GameObject:
   - component: {fileID: 1032260146}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2436,6 +2427,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 14.45
+  ouchSnd: {fileID: 0}
+  audioSrc: {fileID: 1345542459}
 --- !u!114 &1032260144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2502,7 +2495,6 @@ MonoBehaviour:
   angularSpeed: 931.89
   acc: 19.3
   attackDistance: 2
-  target: {fileID: 1032260140}
   state: 0
   navAgent: {fileID: 1074807500}
 --- !u!195 &1074807500 stripped
@@ -2588,7 +2580,7 @@ PrefabInstance:
     - target: {fileID: 3541136479657807541, guid: 2e5e068b4c53a3c4c8a8c17a79d735bb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3541136479657807541, guid: 2e5e068b4c53a3c4c8a8c17a79d735bb,
         type: 3}
@@ -2880,7 +2872,7 @@ PrefabInstance:
     - target: {fileID: 3541136479657807541, guid: 2e5e068b4c53a3c4c8a8c17a79d735bb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 3541136479657807541, guid: 2e5e068b4c53a3c4c8a8c17a79d735bb,
         type: 3}
@@ -2983,7 +2975,6 @@ MonoBehaviour:
   angularSpeed: 931.89
   acc: 19.3
   attackDistance: 2
-  target: {fileID: 1032260140}
   state: 0
   navAgent: {fileID: 1229729117}
 --- !u!195 &1229729117 stripped
@@ -3015,7 +3006,6 @@ MonoBehaviour:
   angularSpeed: 931.89
   acc: 19.3
   attackDistance: 2
-  target: {fileID: 1032260140}
   state: 0
   navAgent: {fileID: 1235933564}
 --- !u!195 &1235933564 stripped
@@ -3044,7 +3034,7 @@ PrefabInstance:
     - target: {fileID: 3541136479657807541, guid: 2e5e068b4c53a3c4c8a8c17a79d735bb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 29
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 3541136479657807541, guid: 2e5e068b4c53a3c4c8a8c17a79d735bb,
         type: 3}
@@ -3180,7 +3170,6 @@ MonoBehaviour:
   angularSpeed: 931.89
   acc: 19.3
   attackDistance: 2
-  target: {fileID: 1032260140}
   state: 0
   navAgent: {fileID: 1342481375}
 --- !u!195 &1342481375 stripped
@@ -3216,7 +3205,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: d73f6fe619943714e965c3ecd3fcb3ca, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -3309,12 +3298,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1345542458}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 99.7756, y: 14.758092, z: 41.38492}
+  m_LocalRotation: {x: 0.037130345, y: 0.9306187, z: -0.019695336, w: 0.36356872}
+  m_LocalPosition: {x: -4.5191116, y: -1.8770595, z: 2.0629203}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_Father: {fileID: 963194228}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1362720433 stripped
 GameObject:
@@ -3339,7 +3328,6 @@ MonoBehaviour:
   angularSpeed: 931.89
   acc: 19.3
   attackDistance: 2
-  target: {fileID: 1032260140}
   state: 0
   navAgent: {fileID: 1362720435}
 --- !u!195 &1362720435 stripped
@@ -3445,7 +3433,7 @@ PrefabInstance:
     - target: {fileID: 3541136479657807541, guid: 2e5e068b4c53a3c4c8a8c17a79d735bb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 3541136479657807541, guid: 2e5e068b4c53a3c4c8a8c17a79d735bb,
         type: 3}
@@ -3613,7 +3601,6 @@ MonoBehaviour:
   angularSpeed: 931.89
   acc: 19.3
   attackDistance: 2
-  target: {fileID: 1032260140}
   state: 0
   navAgent: {fileID: 1421725940}
 --- !u!195 &1421725940 stripped
@@ -3645,7 +3632,6 @@ MonoBehaviour:
   angularSpeed: 931.89
   acc: 19.3
   attackDistance: 2
-  target: {fileID: 1032260140}
   state: 0
   navAgent: {fileID: 1431163174}
 --- !u!195 &1431163174 stripped
@@ -3674,7 +3660,7 @@ PrefabInstance:
     - target: {fileID: 3541136479657807541, guid: 2e5e068b4c53a3c4c8a8c17a79d735bb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 26
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 3541136479657807541, guid: 2e5e068b4c53a3c4c8a8c17a79d735bb,
         type: 3}
@@ -3777,7 +3763,6 @@ MonoBehaviour:
   angularSpeed: 931.89
   acc: 19.3
   attackDistance: 2
-  target: {fileID: 1032260140}
   state: 0
   navAgent: {fileID: 1488732617}
 --- !u!195 &1488732617 stripped
@@ -3809,7 +3794,6 @@ MonoBehaviour:
   angularSpeed: 931.89
   acc: 19.3
   attackDistance: 2
-  target: {fileID: 1032260140}
   state: 0
   navAgent: {fileID: 1492952273}
 --- !u!195 &1492952273 stripped
@@ -3938,7 +3922,7 @@ PrefabInstance:
     - target: {fileID: 3541136479657807541, guid: 2e5e068b4c53a3c4c8a8c17a79d735bb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 3541136479657807541, guid: 2e5e068b4c53a3c4c8a8c17a79d735bb,
         type: 3}
@@ -4214,7 +4198,6 @@ MonoBehaviour:
   angularSpeed: 931.89
   acc: 19.3
   attackDistance: 2
-  target: {fileID: 1032260140}
   state: 0
   navAgent: {fileID: 1720990790}
 --- !u!195 &1720990790 stripped
@@ -4281,7 +4264,6 @@ MonoBehaviour:
   angularSpeed: 931.89
   acc: 19.3
   attackDistance: 2
-  target: {fileID: 1032260140}
   state: 0
   navAgent: {fileID: 1895956105}
 --- !u!195 &1895956105 stripped
@@ -4413,7 +4395,6 @@ MonoBehaviour:
   angularSpeed: 931.89
   acc: 19.3
   attackDistance: 2
-  target: {fileID: 1032260140}
   state: 0
   navAgent: {fileID: 2013998584}
 --- !u!195 &2013998584 stripped
@@ -4442,7 +4423,7 @@ PrefabInstance:
     - target: {fileID: 3541136479657807541, guid: 2e5e068b4c53a3c4c8a8c17a79d735bb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 3541136479657807541, guid: 2e5e068b4c53a3c4c8a8c17a79d735bb,
         type: 3}
@@ -4545,7 +4526,6 @@ MonoBehaviour:
   angularSpeed: 931.89
   acc: 19.3
   attackDistance: 2
-  target: {fileID: 1032260140}
   state: 0
   navAgent: {fileID: 2121807405}
 --- !u!195 &2121807405 stripped
@@ -4577,7 +4557,6 @@ MonoBehaviour:
   angularSpeed: 931.89
   acc: 19.3
   attackDistance: 2
-  target: {fileID: 1032260140}
   state: 0
   navAgent: {fileID: 2137430893}
 --- !u!195 &2137430893 stripped

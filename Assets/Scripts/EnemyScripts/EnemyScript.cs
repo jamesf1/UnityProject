@@ -12,12 +12,12 @@ public class EnemyScript : MonoBehaviour
 	public float angularSpeed = 700;
 	public float acc;
 	public float attackDistance = 2f;
-	public GameObject target;
+	private GameObject target = null;
 	Vector3 move;
 	
 	private float wanderTimer = 50f;
 	private float wanderTime = 50f;
-	private float dieTimer = 200f;
+	private float dieTimer = 100f;
 	private float wanderDist; 
 
 	private float chaseDistance = 40f;
@@ -29,6 +29,11 @@ public class EnemyScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+		if(target == null) {
+			GameObject player = GameObject.FindGameObjectsWithTag("Player")[0];
+			target = player;
+		}
+		Debug.Log(target);
         state = State.WALK;
 		wanderDist = wanderTime * walkSpeed;
 		
@@ -77,7 +82,7 @@ public class EnemyScript : MonoBehaviour
 		navAgent.SetDestination(target.transform.position);
 	}
 	
-	void Alert() {
+	public void Alert() {
 		if(state != State.RUN) {
 			navAgent.isStopped= false;
 			navAgent.speed = runSpeed;

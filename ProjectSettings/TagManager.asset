@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - nextScene
+  - spawn
   layers:
   - Default
   - TransparentFX
